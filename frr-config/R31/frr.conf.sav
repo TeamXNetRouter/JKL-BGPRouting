@@ -1,0 +1,19 @@
+frr version 8.1
+frr defaults traditional
+hostname R31
+domainname 
+no ipv6 forwarding
+service integrated-vtysh-config
+!
+interface R31-eth0
+ ip address 10.31.1.1/24
+exit
+!
+interface R31-eth1
+ ip address 10.33.1.2/24
+exit
+!
+interface R31-eth2
+ ip address 192.13.1.2/24
+exit
+!

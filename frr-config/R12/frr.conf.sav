@@ -1,0 +1,30 @@
+frr version 8.5.6
+frr defaults traditional
+hostname R12
+no ipv6 forwarding
+service integrated-vtysh-config
+!
+interface R12-eth0
+ ip address 172.11.1.1/24
+exit
+!
+interface R12-eth1
+ ip address 10.12.1.1/24
+exit
+!
+interface R12-eth2
+ ip address 10.11.1.1/24
+exit
+!
+router bgp 100
+ no bgp ebgp-requires-policy
+ no bgp hard-administrative-reset
+ no bgp graceful-restart notification
+ !
+ address-family ipv4 unicast
+  network 10.11.1.0/24
+  network 10.12.1.0/24
+  network 172.11.1.0/24
+ exit-address-family
+exit
+!

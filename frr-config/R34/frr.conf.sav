@@ -1,0 +1,20 @@
+frr version 8.1
+frr defaults traditional
+hostname MSI
+domainname 
+no ipv6 forwarding
+hostname R34
+service integrated-vtysh-config
+!
+interface R34-eth0
+ ip address 192.23.1.2/24
+exit
+!
+interface R34-eth1
+ ip address 10.32.1.2/24
+exit
+!
+interface R34-eth2
+ ip address 10.34.1.1/24
+exit
+!

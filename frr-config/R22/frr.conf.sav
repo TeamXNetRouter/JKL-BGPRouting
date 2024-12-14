@@ -1,0 +1,19 @@
+frr version 8.1
+frr defaults traditional
+hostname R22
+domainname 
+no ipv6 forwarding
+service integrated-vtysh-config
+!
+interface R22-eth0
+ ip address 192.12.1.2/24
+exit
+!
+interface R22-eth1
+ ip address 10.24.1.2/24
+exit
+!
+interface R22-eth2
+ ip address 10.22.1.2/24
+exit
+!

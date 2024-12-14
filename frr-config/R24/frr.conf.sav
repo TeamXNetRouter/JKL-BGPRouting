@@ -1,0 +1,15 @@
+frr version 8.1
+frr defaults traditional
+hostname R24
+domainname 
+no ipv6 forwarding
+service integrated-vtysh-config
+!
+interface R24-eth0
+ ip address 10.24.1.1/24
+exit
+!
+interface R24-eth1
+ ip address 10.23.1.2/24
+exit
+!
