@@ -95,6 +95,9 @@ class OSPFLab(Topo):
 			# throw error here
 		elif flags.config_dir.isspace():
 			raise argparse.ArgumentTypeError("directory cannot be only whitespace. Use -h to see examples")
+
+		# print(flags)
+
 		return flags
 	
 	def build(self, *args, **kwargs):

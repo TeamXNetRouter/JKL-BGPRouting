@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center">
   <br>
     <img src="pict/logo.png" alt="logo" width="200">
@@ -66,3 +67,7 @@ Follow the instructions below to get the system up and running:
     ```bash
     C11 traceroute -n C33
     ```
+=======
+chmod +x 
+run sudo
+>>>>>>> a9bda85255d32eecb0d81b1594667d3afcdc1813
