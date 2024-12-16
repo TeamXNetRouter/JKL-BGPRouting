@@ -52,7 +52,7 @@ Follow the instructions below to get the system up and running:
 2. Navigate to the project directory:
 
     ```bash
-    cd bgp-routing
+    cd JKL-BGPRouting
     ```
 
 3. Run the project using the following command:
@@ -62,6 +62,8 @@ Follow the instructions below to get the system up and running:
     ```
 
 4. To test the setup, you can use the following command in the terminal:
+
+   Notes: We apologize that these steps cannot be performed because our existing frr.conf cannot be read by our code. You can test it by reconfiguring manually according to our configuration.
 
     ```bash
     C11 traceroute -n C33
